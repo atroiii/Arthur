@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Arthur Felipe Dos Santos</title>
+        <link rel="stylesheet" href="estilo.css/style.css">
+        <script>
+            function copiarTexto(texto) {
+                navigator.clipboard.writeText(texto).then(() => {
+                    alert(`Texto copiado: ${texto}`);
+                }).catch(err => {
+                    console.error("Erro ao copiar texto: ", err);
+                });
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>Arthur Felipe Dos Santos</h1>
+        </header>
+        <hr>
+        <img src="img/Perfil.png" alt="Foto de perfil de Arthur Felipe" class="imagem">
+        <h2>Informações pessoais:</h2>
+        <ul>
+            <li><b>Idade:</b> 23 anos</li>
+            <li><b>Conhecimento:</b> HTML, CSS, JavaScript, Java, Python, PHP, Vba, Dax.<br>Excel avançado, Power Bi Intermediário.</li>
+        </ul>
+        <h3>Objetivo:</h3>
+        <main id="busco">
+            Integrar na equipe de Controle de Qualidade, onde eu possa aplicar meus conhecimentos como estudante de T.I. Busco contribuir para o aprimoramento dos processos de testes e garantia de qualidade, aliando minha futura formação técnica à vontade de aprender e crescer profissionalmente.
+            </main>
+        <h4>Formação:</h4>
+        <nav>
+            <ul>
+                <li><b>Curso profissionalizante:</b><a href="img/cebrac.pdf" target="_blank"> Assistente Administrativo Completo 2.0 (Cebrac)</a></li>
+                <li><b>Curso Técnico:</b> 
+                    <a href="https://sistec.mec.gov.br/validadenacional" id="copiar-texto" onclick="copiarTexto('44670/119272532CM')" target="_blank">Técnico em Eletrônica</a> 
+                    (<span id="codigo">44670/119272532CM</span>)
+                </li>
+                <li><b>Graduação:</b> <a href="img/unipac.pdf" target="_blank">Ciência da Computação</a><br>Unipac<br>2° período<br>Previsão de formatura: 2028</li>
+            </ul>
+        </nav>
+        <nav>
+            <h5>Informações de Contato:</h5>
+            <ul>
+                <li><b>Telefone:</b> <a href="https://wa.me/5532991407648" target="_blank">(32) 99140-7648</a></li>
+                <li><b>E-mail:</b> <a href="mailto:arthurtroiii513@gmail.com">arthurtroiii513@gmail.com</a></li>
+            </ul>
+        </nav>
+        <footer>
+            Desenvolvido por:<br> Arthur Felipe Dos Santos
+        </footer>
+    </body>
+</html>
